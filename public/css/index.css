@@ -1,0 +1,85 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0; }
+
+body {
+  background-repeat: none;
+  background-size: cover;
+  background: linear-gradient(160deg, #2596be, #ddcdbf);
+  overflow: hidden; }
+
+.container {
+  margin: 1.7rem;
+  color: white; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem; }
+  nav .options {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 4rem; }
+    nav .options ul {
+      padding-top: .3rem;
+      opacity: 0.9; }
+  nav .search {
+    padding: 2rem;
+    border-radius: 3rem;
+    border: none;
+    padding: 7px 2rem 7px 2rem; }
+  nav .search:hover {
+    cursor: pointer;
+    background-color: #ddcdbf; }
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 10rem; }
+  .container1 .contain, .container1 .image {
+    padding-top: 4rem; }
+    .container1 .contain .hero, .container1 .image .hero {
+      font-size: 4rem; }
+    .container1 .contain .p1, .container1 .image .p1 {
+      font-size: 1.5rem;
+      padding: 2rem 0 2rem 0; }
+    .container1 .contain .b1, .container1 .image .b1 {
+      padding: 2rem;
+      border-radius: 3rem;
+      border: none;
+      padding: 1rem 4rem;
+      font-size: large;
+      background-color: #ddcdbf; }
+    .container1 .contain .b1:hover, .container1 .image .b1:hover {
+      background-color: white;
+      cursor: pointer; }
+  .container1 .image .hero_illustr-leaves {
+    position: relative;
+    bottom: 14rem;
+    left: 23.4rem;
+    z-index: -1; }
+  .container1 .image .hero_illustr-leaves2 {
+    position: relative;
+    bottom: 16rem;
+    right: 11rem;
+    z-index: -1; }
+  .container1 .image .hero_illustr-hand {
+    position: relative;
+    bottom: 32rem;
+    right: 9rem;
+    z-index: -1; }
+  .container1 .image .hero_illustr-plane {
+    position: relative;
+    bottom: 40rem;
+    left: 29rem;
+    z-index: -1; }
+  .container1 .image .hero_illustr-ball {
+    position: relative;
+    bottom: 26rem;
+    right: 30rem;
+    z-index: -1; }

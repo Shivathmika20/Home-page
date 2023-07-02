@@ -1,0 +1,137 @@
+$pad:2rem;
+$col:white;
+$con_pad:4rem;
+$gradient-start: #2596be; // starting color
+$gradient-mid:#ddcdbf;
+$gradient-end: rgb(37, 150, 190); 
+$gradient-angle: 160deg;
+
+@mixin property()
+{
+    display: flex;
+    justify-content: space-between;   
+}
+@mixin button()
+{
+    padding: $pad;
+    border-radius: 3rem;
+    border: none;
+   
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+body{
+    background-repeat:none ;
+    background-size:cover;
+    background: linear-gradient($gradient-angle, $gradient-start, $gradient-mid);
+    overflow: hidden;  
+}
+.container{
+    margin: 1.7rem;
+    color: $col;
+    
+}
+
+nav{
+    @include property();
+    padding-top:2rem;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 2.5rem;
+      
+    }
+    
+      
+    .options{
+        font-size: 1.2rem;
+        display: flex; 
+        gap: 4rem;
+        ul{
+            padding-top: .3rem;
+            opacity: 0.9;
+        }
+    }
+    .search{
+        @include button();
+        padding:7px $pad 7px $pad;
+    }
+    .search:hover{
+        cursor: pointer;
+        background-color: #ddcdbf;
+        
+    }
+}
+
+.container1{
+    @include property();
+    // margin: 2rem;  
+    padding: 2rem;
+    gap: 10rem; 
+    .contain,.image
+    {
+        padding-top:$con_pad;
+        .hero{
+            font-size: 4rem;  
+        }
+        .p1{
+            
+            font-size: 1.5rem;
+            padding: $pad 0 $pad 0;
+            
+        }
+        .b1{
+            @include button();
+            padding:1rem $con_pad;
+            font-size: large;
+            background-color: #ddcdbf;
+            
+        }
+        .b1:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+       
+    }
+
+    .image{
+        
+        
+        .hero_illustr-leaves{
+            position:relative;
+             bottom: 14rem;
+            left: 23.4rem;
+             z-index: -1;
+        }
+        .hero_illustr-leaves2{
+            position:relative;
+             bottom: 16rem;
+            right: 11rem;
+             z-index: -1;
+        }
+        .hero_illustr-hand{
+            position:relative;
+             bottom: 32rem;
+            right:9rem;
+             z-index: -1;
+        }
+        .hero_illustr-plane{
+            position:relative;
+             bottom: 40rem;
+            left: 29rem;
+             z-index: -1;
+        }
+        .hero_illustr-ball{
+            position:relative;
+            bottom: 26rem;
+            right: 30rem;
+             z-index: -1;
+        }
+
+    }
+    
+    
+ }
+
